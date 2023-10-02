@@ -1,0 +1,77 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-Blue);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  color: var(--Neon-Green);
+}
+.card {
+  background-color: var(--Dark-Grayish-Blue);
+  position: relative;
+  max-width: 80vh;
+  border-radius: 12px;
+}
+.container q {
+  color: var(--Light-Cyan);
+  margin: 10px 0;
+  text-align: center;
+  font-size: 28px;
+}
+.card-title {
+  color: var(--Neon-Green);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5ch;
+  font-size: 12px;
+}
+.icon {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.btn {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 13px 16px;
+  border-radius: 50%;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--Neon-Green);
+  box-shadow: 1px 1px 20px 7px hsl(150deg 100% 66% / 57%);
+}
+.btn img {
+  padding-top: 3px;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    margin: 10px;
+  }
+}
